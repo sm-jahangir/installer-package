@@ -12,8 +12,8 @@
 
 ### Step - 1:
 	
-	<p> env file add this code</p>
-	<code>APP_INSTALL=NO</code>
+<p> env file add this code</p>
+	APP_INSTALL=NO
 	
 
 ### Step -2: 
@@ -28,9 +28,20 @@ config/app.php</br>
 
 Add this file</p>
 	
-<code>Codersgift\Installer\InstallerServiceProvider::class,</code>
+	Codersgift\Installer\InstallerServiceProvider::class,
 
-### Step - 3:
+<p> Add this file for middleware working </p>
+	Route::group(['middleware' => 'installed'], function () {
+			Route::get('/', function () {
+					return view('welcome');
+			});
+
+			Route::get('/hello-world', function () {
+					return "Hello world page, finally done";
+			})->name('helloworld');
+	});
+
+### Step - 3: (This is Option ) - Use it if you are using this package in root folder
 <p>composer.json file</p>
 <code>
 "autoload-dev": {
