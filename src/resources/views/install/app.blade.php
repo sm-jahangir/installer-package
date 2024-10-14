@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maildoll - Email & SMS Marketing SaaS Application</title>
+    <title>Laravel Installer: Effortless Laravel Application Setup</title>
     <link href="{{ asset('install/css/full.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('install/css/tailwind.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('install/css/style.css') }}" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="/" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('install/img/favicon.png') }}" type="image/x-icon">
 </head>
 
 

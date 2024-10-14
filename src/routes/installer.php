@@ -30,12 +30,12 @@ Route::group(['middleware' => 'installcheck', 'prefix' => 'install'], function (
 });
 
 // Protected routes that require the application to be installed
-Route::group(['middleware' => 'installed'], function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
+// Route::group(['middleware' => 'installed'], function () {
+//     Route::get('/', function () {
+//         return view('welcome');
+//     });
 
-    Route::get('/hello-world', function () {
-        return "Hello world page, finally done";
-    })->name('helloworld');
-});
+//     Route::get('/hello-world', function () {
+//         return "Hello world page, finally done";
+//     })->name('helloworld');
+// });

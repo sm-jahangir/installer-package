@@ -22,7 +22,7 @@
                     </div>
 
                     <div title="Codecanyon ↗︎" class="items-center flex-none"><a aria-label="Codecanyon" target="_blank"
-                            href="https://codecanyon.net/item/maildoll-email-sms-marketing-application/30467920"
+                            href="https://codecanyon.net/user/codersgift"
                             rel="noopener" class="normal-case btn btn-ghost drawer-button btn-square">
                             <img src="{{ asset('install/img/codecanyon.png') }}" alt="codecanyon">
                         </a>
@@ -42,7 +42,7 @@
 
                     <div class="card col-span-1 row-span-3 shadow-lg xl:col-span-2 bg-base-100">
                         <div class="card-body">
-                            <h2 class="text-4xl font-bold card-title">Maildoll - Email & SMS Marketing SaaS Application</h2>
+                            <h2 class="text-4xl font-bold card-title">{{ env('APP_NAME') }} - Effortless Laravel Application Setup</h2>
 
                             <form action="{{route('db.setup')}}" method="GET">
                                 <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">

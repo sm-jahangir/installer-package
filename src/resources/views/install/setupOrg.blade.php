@@ -1,7 +1,7 @@
 @extends('installer::install.app')
 
 @section('head')
-    <title>Maildoll - Organization Setup</title>
+    <title>Laravel Installer: Effortless Laravel Application Setup</title>
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
             <!-- BEGIN: Company Information -->
             <div class="bg-white shadow-lg rounded-lg p-6 mt-10 lg:mt-0">
                 <div class="border-b pb-4 mb-6">
-                    <h2 class="font-semibold text-2xl text-gray-800">@translate(Organization Setup)</h2>
+                    <h2 class="font-semibold text-2xl text-gray-800">@translate(System Setup)</h2>
                 </div>
 
                 <form action="{{ route('org.store') }}" method="post" enctype="multipart/form-data">
@@ -76,14 +76,14 @@
                         <div class="col-span-12 xl:col-span-6">
                             <div class="mb-5">
                                 <label class="text-gray-700">@translate(Test Connection Email) <span class="text-red-500">*</span></label>
-                                <input type="email" class="input w-full border border-gray-300 rounded-md mt-2 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="demo@maildoll.com" name="test_connection_email" required>
+                                <input type="email" class="input w-full border border-gray-300 rounded-md mt-2 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="demo@mail.com" name="test_connection_email" required>
                             </div>
                         </div>
 
                         <div class="col-span-12 xl:col-span-6">
                             <div class="mb-5">
                                 <label class="text-gray-700">@translate(Test Connection Sms Number) <span class="text-red-500">*</span></label>
-                                <input type="text" class="input w-full border border-gray-300 rounded-md mt-2 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="+8801825731327" name="test_connection_sms" required>
+                                <input type="text" class="input w-full border border-gray-300 rounded-md mt-2 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="+8801767275819" name="test_connection_sms" required>
                             </div>
                         </div>
                     </div>

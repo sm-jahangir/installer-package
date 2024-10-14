@@ -1,7 +1,7 @@
 @extends('installer::install.app')
 
 @section('head')
-    <title>Maildoll - Organization Setup</title>
+    <title>Laravel Installer: Effortless Laravel Application Setup</title>
 @endsection
 
 @section('content')
@@ -30,7 +30,7 @@
                             <div>
                                 <label class="block text-gray-700 text-sm font-semibold mb-2">
                                     @translate(Admin Email) <small class="text-red-500">@translate(required)</small>
-                                    <span class="text-gray-500 ml-1">Ex: admin@maildoll.com</span>
+                                    <span class="text-gray-500 ml-1">Ex: admin@mail.com</span>
                                 </label>
                                 <input type="email" name="email" class="input w-full border-gray-300 rounded-md p-3 mt-1 focus:border-blue-500 focus:ring focus:ring-blue-200" placeholder="Admin Email" value="" required>
                             </div>
