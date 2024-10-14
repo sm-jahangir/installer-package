@@ -13,6 +13,7 @@
 ### Step - 1:
 	
 <p> env file add this code</p>
+
 	APP_INSTALL=NO
 	
 
@@ -31,6 +32,7 @@ Add this file</p>
 	Codersgift\Installer\InstallerServiceProvider::class,
 
 <p> Add this file for middleware working </p>
+
 	Route::group(['middleware' => 'installed'], function () {
 			Route::get('/', function () {
 					return view('welcome');
@@ -43,14 +45,14 @@ Add this file</p>
 
 ### Step - 3: (This is Option ) - Use it if you are using this package in root folder
 <p>composer.json file</p>
-<code>
-"autoload-dev": {
-      	      "psr-4": {
-           		"Tests\\": "tests/",
-           		"Codersgift\\Installer\\": "package/Installer/src/"
-       	      }
-   	},
-</code>
+
+	"autoload-dev": {
+			"psr-4": {
+			"Tests\\": "tests/",
+			"Codersgift\\Installer\\": "package/Installer/src/"
+			}
+	},
+
 
 	
 ### Step - 3: Publish the Assets
@@ -66,7 +68,7 @@ Step for fresh data </br>
 The user create so user table 
 </p>
 
-<code>
-$table->foreignId('role_id')->default(2);
-$table->boolean('status')->default(false);
-</code>
+
+	$table->foreignId('role_id')->default(2);
+	$table->boolean('status')->default(false);
+
